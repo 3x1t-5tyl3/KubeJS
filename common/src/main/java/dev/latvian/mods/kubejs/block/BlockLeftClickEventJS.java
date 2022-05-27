@@ -39,6 +39,10 @@ public class BlockLeftClickEventJS extends PlayerEventJS {
 	public BlockContainerJS getBlock() {
 		return new BlockContainerJS(player.level, pos);
 	}
+	
+	public InteractionHand getHand() {
+		return hand;
+	}	
 
 	public ItemStackJS getItem() {
 		return ItemStackJS.of(player.getItemInHand(hand));
